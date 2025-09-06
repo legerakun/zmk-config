@@ -58,10 +58,10 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &kp COMMA  &kp DOT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans   &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans   &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &kp COMMA  &kp DOT  &trans     &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
             >;
 
