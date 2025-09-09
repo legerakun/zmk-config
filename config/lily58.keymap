@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        console_log: console_log {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR>;
+            label = "CONSOLE_LOG";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,11 +49,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                         &kp F7     &kp F8    &kp F9           &kp F10    &kp F11    &kp F12
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                    &trans     &trans    &kp UNDER        &kp MINUS  &kp EQUAL  &kp PLUS
-&kp GRAVE  &trans    &trans  &trans    &trans      &trans                         &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR   &kp PIPE
-&trans     &trans    &trans  &trans    &trans      &trans       &trans    &trans  &trans     &trans    &trans           &kp LBRC   &kp RBRC   &kp BACKSLASH
-                             &trans    &trans      &trans       &trans    &trans  &trans     &trans    &trans
+&kp F1     &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                               &kp F7     &kp F8    &kp F9           &kp F10    &kp F11    &kp F12
+&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                          &trans     &trans    &kp UNDER        &kp MINUS  &kp EQUAL  &kp PLUS
+&kp GRAVE  &trans    &trans  &trans    &trans      &trans                               &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR   &kp PIPE
+&trans     &trans    &trans  &trans    &trans      &trans       &console_log    &trans  &trans     &trans    &trans           &kp LBRC   &kp RBRC   &kp BACKSLASH
+                             &trans    &trans      &trans       &trans          &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
