@@ -68,7 +68,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans          &trans          &trans        &trans          &trans                    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans          &trans          &trans        &trans          &trans                    &trans  &trans    &trans    &trans  &trans     &to 3
 &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_UP    &trans                    &trans  &trans    &trans    &trans  &trans     &trans
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_DOWN  &trans                    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
 &trans  &trans          &trans          &mkp LCLK     &mkp RCLK       &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans     &trans
@@ -76,6 +76,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        steno_layer {
+            bindings = <
+&trans  &trans  &trans    &trans    &trans    &trans                                  &trans    &trans    &trans    &trans    &trans    &to 0
+&trans  &trans  &kp HASH  &kp HASH  &kp HASH  &kp HASH                                &kp HASH  &kp HASH  &kp HASH  &kp HASH  &kp HASH  &trans
+&trans  &trans  &kp S     &kp T     &kp P     &kp H                                   &kp F     &kp P     &kp L     &kp T     &kp D     &trans
+&trans  &trans  &kp S     &kp K     &kp W     &kp R     &kp ASTERISK    &kp ASTERISK  &kp R     &kp B     &kp G     &kp S     &kp Z     &trans
+                          &trans    &kp A     &kp O     &trans          &trans        &kp E     &kp U     &trans
+            >;
         };
     };
 };
