@@ -23,7 +23,7 @@
             bindings =
                 <&kt LEFT_ALT &kt LEFT_WIN &kt X>,
                 <&macro_wait_time 50>,
-                <&kt LEFT_ALT &kt LEFT_WIN &kt X &kp ESCAPE>;
+                <&kt LEFT_ALT &kt LEFT_WIN &kt X>;
 
             label = "WARPD_HINT";
         };
